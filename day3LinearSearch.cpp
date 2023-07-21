@@ -4,10 +4,12 @@ using namespace std;
 
 int linearSearch(vector<int> v, int n,int index)
 {
-    if(v[index] == n ) 
-        return index;
     if(index == v.size()-1)
         return -1;
+
+    if(v[index] == n ) 
+        return index;
+    
     return linearSearch(v,n,index+1);
 }
 

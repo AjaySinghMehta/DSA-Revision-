@@ -18,9 +18,7 @@ int chatgptSum(vector<int> &arr, int index)
     if(arr.size()==0) return 0;
     if(index == arr.size()-1) 
         return arr[index];
-    int currentSum = arr[index];
-    int remainingSum = chatgptSum(arr, index+1);
-    return (currentSum + remainingSum);
+    return (arr[index] + chatgptSum(arr, index+1));
 }
 
 int main()
