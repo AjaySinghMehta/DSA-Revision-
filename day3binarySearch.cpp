@@ -3,7 +3,9 @@
 using namespace std;
 
 /*
-    base case : element found 
+    base case : elemnet not found
+                element found 
+                
     processing: arr.size() = 0        return  -1
                 element not found     return -1
                 element found         return index
@@ -21,8 +23,8 @@ int binarySearch(vector<int> &v, int n, int startidx, int endidx)
     int mid = (startidx + endidx)/2;
     if(v[mid] == n) return mid;
     if(v[mid]>n) return binarySearch(v, n , startidx, mid-1);
-    else if(v[mid]<n) return binarySearch(v, n , mid+1, endidx);
-    return -1;
+    else return binarySearch(v, n , mid+1, endidx);
+    
 
 }
 
