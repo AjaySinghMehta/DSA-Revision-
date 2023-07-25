@@ -48,6 +48,9 @@ void merge(vector<int>& v, int start, int end)
     {
         v[vidx++] = arr2[idx2++];
     }
+
+    arr1.clear();
+    arr2.clear();
 }
 
 void mergeSort(vector<int> &v, int start, int end)
@@ -68,8 +71,8 @@ void mergeSort(vector<int> &v, int start, int end)
 
 int main()
 {
-    vector<int> v = {1, 2, 3, 5, 4, 9, 8, 7, 69, 10};
-    mergeSort(v, 0, v.size() - 1);
+    vector<int> v = {1,4,5,2,3,22,15,14,12,11,0,11,7,8,12,14}; 
+    mergeSort(v, 0, v.size() - 1); 
     for (auto a : v)
         cout << a << " ";
     return 0;
