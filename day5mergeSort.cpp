@@ -2,6 +2,11 @@
 #define ll long long
 using namespace std;
 
+/*
+   merge sort is stable but is no in place as it requires additional memory to perform sorting
+*/
+
+
 void merge(vector<int>& v, int start, int end)
 {
     int mid = (start + end) / 2;

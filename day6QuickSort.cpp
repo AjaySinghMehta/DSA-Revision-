@@ -3,6 +3,12 @@
 using namespace std;
 
 /*
+    quick sort is an unstable in place sorting algorithm 
+    as  if there are two elements with equal keys, a stable sorting algorithm ensures that the element that appeared first in the input may or may not appear first in the sorted output.
+    and there is no additional memmory required to perform quick sort
+
+
+
     partition = pivot = a[0]
                 iterate array = loop a for all i less then pivot
                 count++
