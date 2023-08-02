@@ -6,12 +6,17 @@ using namespace std;
 
 
 /*
+
+leetcode 78 
  creating power set
 
  base case : if i runs out of array/subset
                     then include the element till then and return
             
-
+ recurrence relation : calling solve  once excluding the element 
+                       and once including the element 
+                       sovle(arr, outputarray, index++ arr of arrs)
+                       index incrementing everytime
 */
 
 void solve(vector<int> nums, vector<int> output, int index, vector<vector<int>> &ans)
